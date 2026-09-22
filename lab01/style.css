@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+html, body {
+    height: 100%;
+    font-family: "Google Sans", sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+  background: rgba(100, 100, 100, 1);
+  padding: 40px;
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  max-width: 500px;
+  color: white;
+  position: absolute;
+  top: 35%;
+  left: 31%;
+  
+}
+
+.s1, .s2, .s3, .s4 {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.s1 {
+    background-image: url("./img/Trauma1.jpg");
+}
+
+.s2 {
+    background-image: url("./img/Trauma2.jpg");
+}
