@@ -12,7 +12,7 @@ html, body {
     line-height: 2.5vh;
 }
 
-.card {
+.card-title {
   background: rgba(100, 100, 100, 1);
   padding: 32px;
   border-radius: 16px;
@@ -22,7 +22,7 @@ html, body {
   position: absolute;
 }
 
-.content {
+.content-title {
   min-height: 95vh;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,7 @@ html, body {
   text-align: center;
 }
 
-.card2 {
+.card {
   background: rgba(100, 100, 100, 1);
   padding: 16px;
   border-radius: 16px;
@@ -42,7 +42,7 @@ html, body {
   top: 70vh;
 }
 
-.content2 {
+.content {
   height: 32vh;
   width: 100%;
   display: flex;
@@ -67,4 +67,12 @@ html, body {
 
 .s2 {
     background-image: url("./img/Trauma2.jpg");
+}
+
+.s3 {
+    background-image: url("./img/Trauma3.jpg");
+}
+
+.s4 {
+    background-image: url("./img/Trauma4.jpg");
 }
