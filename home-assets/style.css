@@ -10,7 +10,6 @@ body {
 	background-size: cover;
     text-shadow: 0.2vw 0.2vw 1vw black, 0.2vw 0.2vw 1vw black, 0.2vw 0.2vw 1vw black;
     color: white;
-    line-height: 150%;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -26,5 +25,5 @@ h1 {
 
 #mainTitle {
     margin-top: 8vh; 
-    margin-bottom: 7vh;
+    margin-bottom: 3vh;
 }
