@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+body {
+    display: grid;
+    place-items: center;
+    font-family: "Google Sans", sans-serif;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    background: url('bg-overlay.png') center center fixed no-repeat, #000000 url('bg.jpg') center center fixed no-repeat;
+	background-size: cover;
+    text-shadow: 0.2vw 0.2vw 1vw black, 0.2vw 0.2vw 1vw black, 0.2vw 0.2vw 1vw black;
+    color: white;
+    line-height: 150%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+h1 {
+    font-size: 8vh;
+}
+
+#mainTitle {
+    margin-top: 8vh; 
+    margin-bottom: 7vh;
+}
