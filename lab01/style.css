@@ -20,6 +20,11 @@ html, body {
   max-width: 130vh;
   color: white;
   position: absolute;
+  box-shadow: 0 0.3vh 0.5vh black;
+}
+
+.small {
+    font-size: 1.25vh;
 }
 
 .content {
@@ -59,7 +64,12 @@ html, body {
 
 .transition {
     background-color: black;
-    height: 75vh;
+    height: 100vh;
+}
+
+.caption {
+    position: sticky;
+    top: 10px;
 }
 
 .s6 {
