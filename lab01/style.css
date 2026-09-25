@@ -64,7 +64,8 @@ html, body {
 
 .transition {
     background-color: black;
-    height: 100vh;
+    height: 150vh;
+    bottom: 20vh;
 }
 
 .caption {
