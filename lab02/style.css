@@ -1,12 +1,16 @@
+/* Google Sans font */
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+/* Chewy Font */
 @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
 
 
 html, body {
-    height: 100%;
+    height: 90%;
     font-family: "Google Sans", sans-serif;
-    background: url('img/bg-overlay.png') center center fixed no-repeat, #8889CC center center fixed no-repeat;
+    background: url('img/bg-overlay.png') center center fixed no-repeat, #8888CC url('../assets/bg/" + chosenBG + "') center center fixed no-repeat;
     font-size: medium;
+    background-size: cover;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -16,6 +20,35 @@ html, body {
     text-shadow: 0.2vw 0.2vw 1vw black, 0.2vw 0.2vw 1vw black, 0.2vw 0.2vw 1vw black;
     padding-right: 2vh;
     padding-left: 2vh;
+}
+
+button {
+    font-family: "Google Sans", sans-serif;
+    font-weight: bold;
+    font-size: 2vh;
+    background-color: #FFFFFF;
+    color: black;
+    width: 10vh;
+    height: 5vh;
+    border: 0;
+}
+
+button:hover:enabled {
+    background-color: #8888CC;
+}
+
+button:active:enabled {
+    background-color: #5656FF;
+    color: white;
+}
+
+button:disabled {
+    background-color: #888888;
+    color: white;
+}
+
+#mafuheadpatButton {
+    width: 25vh;
 }
 
 h1 {

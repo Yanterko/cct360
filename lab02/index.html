@@ -5,29 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="darkreader-lock">
     <link rel="stylesheet" href="style.css">
-    <title></title>
+    <title>Mafuventures with Mafuyu!</title>
 </head>
 <body>
-    <h1>Adventures of Mafuyu!!!!11!!!</h1>
+    <h1>Mafuventures with Mafuyu!!!!111!</h1>
     <!-- TODO: Image gallery here -->
     <div class="section" id="gallery">
         <h2>Gallery</h2>
-        <img class="gallery-view" src="img/mafugallery/1.jpeg">
-        <p>Use the buttons below to browse the gallery. We start with Mafuyu at Chateau Frontenac
-            in Quebec City!
+        <img class="gallery-view" id="mafugallery" src="img/mafugallery/1.jpeg">
+        <p id="mafugalleryCaption">??
         </p>
         <div class="gallery-buttons">
-            <button>← Prev.</button>
-            <button>?/?</button>
-            <button>Next →</button>
+            <button id="mafugalleryPrevBtn">← Prev.</button>
+            <button id="mafugalleryProgressBtn" disabled=true>?/?</button>
+            <button id="mafugalleryNextBtn">Next →</button>
         </div>
     </div>
 
     <div class="section" id="headpat">
         <h2>Headpat zone</h2>
-        <img class="gallery-view" src="img/mafuheadpat/idle.jpeg">
-        <p>Click the image to give Mafuyu a headpat! :D
-        </p>
+        <img class="gallery-view" id="mafuheadpat" src="img/mafuheadpat/idle.jpeg">
+        <p id="mafuheadpatCounter">Headpat Counter:</p>
+        <p><button id="mafuheadpatButton">Click to Headpat!</button></p>
     </div>
     <script src="main.js"></script>
 </body>
