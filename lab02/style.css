@@ -22,6 +22,10 @@ html, body {
     padding-left: 2vh;
 }
 
+.section {
+    margin-bottom: 2vh;
+}
+
 button {
     font-family: "Google Sans", sans-serif;
     font-weight: bold;
@@ -48,7 +52,15 @@ button:disabled {
 }
 
 #mafuheadpatButton {
-    width: 25vh;
+    width: 50vh;
+    height: 10vh;
+    font-size: 4vh;
+}
+
+#mafuheadpatGoto {
+    width: 64vh;
+    height: 10vh;
+    font-size: 3.75vh;
 }
 
 h1 {
@@ -58,16 +70,6 @@ h1 {
 
 h2 {
     font-size: 32px;
-}
-
-#gallery {
-    float: left;
-    width: 50%;
-}
-
-#headpat {
-    float: right;
-    width: 50%;
 }
 
 .gallery-view {

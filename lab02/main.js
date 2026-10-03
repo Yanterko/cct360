@@ -44,43 +44,9 @@ function galleryUpdate() {
     }
 }
 
-
-// Headpat section
-var headpatIdleImg = "img/mafuheadpat/idle.jpeg";
-var headpatHoverImg = "img/mafuheadpat/headpat1.jpeg";
-var headpatClickImg = "img/mafuheadpat/headpat2.jpeg";
-var headpatImage = document.getElementById("mafuheadpat");
-var headpatButton = document.getElementById("mafuheadpatButton");
-var headpatCounter = document.getElementById("mafuheadpatCounter");
-var headpatCount = 0;    // Just don't change this >:(
-var currentlyHovered = false;
-
-function headpatHover() {
-    currentlyHovered = true;
-    headpatImage.src = headpatHoverImg;
-}
-
-function headpatIdle() {
-    if (!currentlyHovered) {
-        headpatImage.src = headpatIdleImg;
-    }
-    
-}
-
-function headpatClick() {
-    headpatCount++;
-    headpatUpdate();
-    headpatImage.src = headpatClickImg;
-}
-
-function headpatReset() {
-    currentlyHovered = false;
-    headpatImage.src = headpatHoverImg;
-    setTimeout(headpatIdle, 600);
-}
-
-function headpatUpdate() {
-    headpatCounter.textContent = "Headpat Counter: " + headpatCount;
+// Popup to the Headpat zone
+function gotoHeadpat() {
+    window.open("headpat.html", "The Headpat Zone", "width=750, height=750, top=100, left=100");
 }
 
 // Binding the gallery buttons
@@ -88,9 +54,4 @@ galleryPrevBtn.onclick = galleryPrevImg;
 galleryNextBtn.onclick = galleryNextImg;
 galleryUpdate();
 
-// Binding the headpat buttons
-headpatButton.onmouseenter = headpatHover;
-headpatButton.onmousedown = headpatClick;
-headpatButton.onmouseup = headpatHover;
-headpatButton.onmouseleave = headpatReset;
-headpatUpdate();
+document.getElementById("mafuheadpatGoto").onclick = gotoHeadpat;
