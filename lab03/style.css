@@ -51,13 +51,8 @@ button:disabled {
     color: white;
 }
 
-#mafuheadpatButton {
-    width: 50vh;
-    height: 10vh;
-    font-size: 4vh;
-}
 
-#mafuheadpatGoto {
+.bigButton {
     width: 64vh;
     height: 10vh;
     font-size: 3.75vh;
@@ -72,6 +67,6 @@ h2 {
     font-size: 32px;
 }
 
-.gallery-view {
+.galleryView {
     width: 60vh;
 }
