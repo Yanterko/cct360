@@ -77,6 +77,6 @@ h2 {
     white-space: pre-line;
 }
 
-.galleryView {
-    width: 60vh;
+#storyView {
+    width: 64vh;
 }
