@@ -29,11 +29,11 @@ body {
 button {
     font-family: "Google Sans", sans-serif;
     font-weight: bold;
-    font-size: 2vh;
+    font-size: 3vh;
     background-color: #FFFFFF;
     color: black;
-    width: 10vh;
-    height: 5vh;
+    width: 50vh;
+    height: 10vh;
     border: 0;
 }
 
@@ -75,6 +75,7 @@ h2 {
 
 #storyCaption {
     white-space: pre-line;
+    font-size: x-large
 }
 
 #storyView {
