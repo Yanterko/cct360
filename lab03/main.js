@@ -11,7 +11,7 @@ const storyline1p1 = "OH NO!! Mafuyu missed her bus home! Guess she has to stay 
 const storyline2p0 = "Fast forward a couple hours, and Mafuyu had quite the day in Brampton! She's now getting on the bus home...";
 const storyline2p1 = "Mafuyu made it home!... but she was so tired that she crashed to sleep on her bed!";
 
-const storyImagesRoot = "img/";
+const storyImagesRoot = "/lab03/img/";
 const storyImages = ["gallery0.jpg", "gallery1.jpg", "gallery2.jpg"];
 
 /* Elements */

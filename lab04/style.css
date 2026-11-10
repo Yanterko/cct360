@@ -8,7 +8,7 @@
 body {
     height: 90%;
     font-family: "Google Sans", sans-serif;
-    background: url('assets/bg-overlay.png') center center fixed no-repeat, #696969 /* TODO: replace with background */ center fixed no-repeat;
+    background: url('/lab04/assets/bg-overlay.png') center center fixed no-repeat, #696969 center fixed no-repeat;
     font-size: medium;
     background-size: cover;
     align-items: center;
