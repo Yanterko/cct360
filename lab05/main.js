@@ -2,9 +2,11 @@ let hintBtn = document.getElementById("hintBtn");
 let hintPrompt = document.getElementById("hint");
 let hintText = document.getElementById("hintId");
 let hintBtnSection = document.getElementById("hintBtnSection");
-const gameTips = ["If you need a change of pace, try holding Space or Shift...", 
-                  "If you need a distraction, try clicking the keyboard..."];
+const gameTips = ["If you need a change of pace, try holding Shift or G...", 
+                  "If you need a distraction, try clicking the keyboard (especially a lot of times)..."];
 let currGameTip = 0;
+
+let referencesBtn = document.getElementById("referencesBtn");
 
 let bgAudio = document.getElementById("bgAudio");
 let bgVideoSrc = document.getElementById("bgVideoSrc");
@@ -51,6 +53,7 @@ function showHint() {
 function hideHint() {
     hintPrompt.hidden = true;
     hintOnScrn = false;
+    hintBtn.textContent = "Hint " + (currGameTip + 1);
 }
 
 function start() {
@@ -60,12 +63,11 @@ function start() {
     startBtn.hidden = true;
     hintPrompt.hidden = true;
     hintBtnSection.hidden = false;
-
 }
 
 function mafuyu() {
     bgVideo.pause();
-    bgAudio.pause();
+    setTimeout(function() {bgAudio.pause();}, 500);
     bgVideo.hidden = true;
     bgVideo2.hidden = false;
     bgVideo2.play();
@@ -84,7 +86,15 @@ function mafuyu2() {
 function abgkeyboard(mX, mY) {
     let sPick = Math.floor(Math.random() * 10);
     console.log(sPick);
-    if (mX >= 301 && mX <= 1387 && mY >= 393 && mY <= 868 && started) {
+    if (started) {
+        if (abgkClickCount == 20) {
+            mafuyu();
+            speedRegular();
+            abgkClickCount = 0;
+        }
+        else {
+            abgkClickCount++;
+        }
         switch(sPick) {
             case 0: 
                 abgkSound0.play();
@@ -159,24 +169,32 @@ function speedDown() {
     }
 }
 
+function showReferences() {
+    window.open("/lab05/references.html", "References", "width=750, height=750, top=100, left=100, resizable=yes");
+}
+
 hintBtn.addEventListener("click", showHint);
 startBtn.addEventListener("click", start);
 setVolButton.addEventListener("click", setVol);
+referencesBtn.addEventListener("click", showReferences);
 
 bgVideo.onclick = function(event) {
     let mX = event.offsetX;
     let mY = event.offsetY;
     abgkeyboard(mX, mY);
-    if (abgkClickCount == 20) {
-        mafuyu();
-        speedRegular();
-        abgkClickCount = 0;
-    }
-    else {
-        abgkClickCount++;
-    }
 }
 
-laBody.addEventListener("keyDown", (e) => {
-    console.log(e.key);
+addEventListener("keydown", (e) => {
+    if (started && !bgVideo.hidden) {
+        if (e.shiftKey) {
+            speedUp();
+        }
+        else if (e.key == "g") {
+            speedDown();
+        }
+    }
+});
+
+addEventListener("keyup", (e) => {
+    speedRegular();
 });

@@ -21,5 +21,7 @@
 - https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/hidden
 - https://www.w3schools.com/jsref/prop_range_value.asp
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
+- https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event
+- https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/hidden
 - "Dreamy bells" sound effect by danyourmaster (Freesound), via Pixabay (https://pixabay.com/sound-effects/musical-dreamy-bells-47721/)
 - "MGS detected lead" sound effect by jobro (Freesound), via Pixabay (https://pixabay.com/sound-effects/film-special-effects-mgs-detected-lead-104157/)
