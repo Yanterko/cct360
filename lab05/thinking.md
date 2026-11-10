@@ -1,4 +1,3 @@
-
 # ideas
 - mafuyu and the ABGK (Amazon BarGain Keyboard) on the TTC subway
   - http://192.168.0.160:2283/photos/eca48b5b-5afb-482a-923d-0867c772ac11
@@ -15,3 +14,12 @@
   - Click Mafuyu = surprise
   - Click keyboard = make keyboard sounds
   - Click the map = make that TTC subway door closing chime
+
+# References
+- https://www.w3schools.com/howto/howto_css_fullscreen_video.asp
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/range
+- https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/hidden
+- https://www.w3schools.com/jsref/prop_range_value.asp
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
+- "Dreamy bells" sound effect by danyourmaster (Freesound), via Pixabay (https://pixabay.com/sound-effects/musical-dreamy-bells-47721/)
+- "MGS detected lead" sound effect by jobro (Freesound), via Pixabay (https://pixabay.com/sound-effects/film-special-effects-mgs-detected-lead-104157/)

@@ -7,13 +7,87 @@
     <link rel="stylesheet" href="/lab05/style.css">
     <meta name="darkreader-lock">
 </head>
-<body>
-    <video id="videoMain" autoplay loop mute>
-        <source src="/lab05/assets/mafusubway.mp4">
+<body id="laBody">
+    <video id="bgVideo" loop>
+        <source src="/lab05/assets/mafusubway.mp4" type="video/mp4">
+        Your browser can't play this video D:
+    </video>
+    <video id="bgVideo2" hidden>
+        <source src="/lab05/assets/mafusubway2.mp4" type="video/mp4">
+        Your browser can't play this video D:
     </video>
     <div class="content">
-        <button id="hintBtn">Show hints</button>
+        <div class="contentIn">
+            <div class="contentSection">
+            <button id="referencesBtn">References</button>
+            </div>
+        </div>
+        <div class="contentIn">
+            <div class="contentSection">
+                Volume:
+                <input id="volSlider" type="range" min="0" max="100" value="100">  
+            </div>
+        </div>
+        <div class="contentIn">
+            <div class="contentSection">
+            <button id="setVolBtn">Set volume</button>
+            </div>
+        </div>
+        <div class="contentIn" id="hintBtnSection" hidden>
+            <div class="contentSection">
+            <button id="hintBtn">Hint</button>
+            </div>
+        </div>
     </div>
+    <div id="hint">
+        <p id="hintId">Enjoy this relaxing train ride with Mafuyu!</p>
+        <button id="startBtn">Start</button>
+    </div>
+    <audio id="bgAudio" loop>
+        <source src="/lab05/assets/soundscape.mp3" type="audio/mpeg">
+        Your browser can't play this sound D:
+    </audio>
+    <!-- Keyboard sounds -->
+    <audio id="abgKeyboard1">
+        <source src="/lab05/assets/abgk0.ogg">
+        Your browser can't play this sound either!! What a sad life :((
+    </audio>
+    <audio id="abgKeyboard2">
+        <source src="/lab05/assets/abgk1.ogg">
+        Your browser can't play this sound either!! What a sad life :((
+    </audio>
+    <audio id="abgKeyboard3">
+        <source src="/lab05/assets/abgk2.ogg">
+        Your browser can't play this sound either!! What a sad life :((
+    </audio>
+    <audio id="abgKeyboard4">
+        <source src="/lab05/assets/abgk3.ogg">
+        Your browser can't play this sound either!! What a sad life :((
+    </audio>
+    <audio id="abgKeyboard5">
+        <source src="/lab05/assets/abgk4.ogg">
+        Your browser can't play this sound either!! What a sad life :((
+    </audio>
+    <audio id="abgKeyboard6">
+        <source src="/lab05/assets/abgk5.ogg">
+        Your browser can't play this sound either!! What a sad life :((
+    </audio>
+    <audio id="abgKeyboard7">
+        <source src="/lab05/assets/abgk6.ogg">
+        Your browser can't play this sound either!! What a sad life :((
+    </audio>
+    <audio id="abgKeyboard8">
+        <source src="/lab05/assets/abgk7.ogg">
+        Your browser can't play this sound either!! What a sad life :((
+    </audio>
+    <audio id="abgKeyboard9">
+        <source src="/lab05/assets/abgk8.ogg">
+        Your browser can't play this sound either!! What a sad life :((
+    </audio>
+    <audio id="abgKeyboard10">
+        <source src="/lab05/assets/abgk9.ogg">
+        Your browser can't play this sound either!! What a sad life :((
+    </audio>
     <script src="/lab05/main.js"></script>
 </body>
 </html>

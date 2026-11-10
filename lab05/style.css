@@ -1,4 +1,8 @@
-/* Adapted from https://www.w3schools.com/howto/howto_css_fullscreen_video.asp */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
 
 video {
     min-width: 100%;
@@ -6,25 +10,71 @@ video {
     position: fixed;
     left: 0;
     top: 0;
+    margin: auto;
 }
 
 button {
     width: 20vh;
     height: 5vh;
-    background-color: white;
+    background-color: #595959;
+    color: white;
     border: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 900; 
 }
 
 button:hover {
     background-color: #8888cc;
 }
 
+button:active {
+    background-color: #9999dd;
+}
+
 .content {
   position: fixed;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
-  width: 100%;
   padding: 20px;
+}
+
+.contentIn {
+    display: flexbox;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 1vh;
+    outline: 2px 2px;
+}
+
+.contentSection {
+    display: flexbox;
+    float: left;
+    width: 20vh;
+    height: 5vh;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+#hint {
+    padding: 2vh;
+    position: absolute;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+}
+
+#hintId {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
