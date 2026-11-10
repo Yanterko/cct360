@@ -1,5 +1,5 @@
 // Gallery section
-var galleryImgRoot = "img/mafugallery";
+var galleryImgRoot = "/lab02/img/mafugallery";
 var galleryImgList = ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg"];   // Array with all images in the folder contained in `mafugalleryImgRoot`.
 var galleryCaptionList = ["Use the buttons below to browse the gallery. We start with Mafuyu at Chateau Frontenac in Quebec City!",
     "The two Mafulings on a skyride at the CNE!",
@@ -46,7 +46,7 @@ function galleryUpdate() {
 
 // Popup to the Headpat zone
 function gotoHeadpat() {
-    window.open("headpat.html", "The Headpat Zone", "width=750, height=750, top=100, left=100");
+    window.open("/lab02/headpat.html", "The Headpat Zone", "width=750, height=750, top=100, left=100");
 }
 
 // Binding the gallery buttons

@@ -1,7 +1,7 @@
 // Headpat section
-var headpatIdleImg = "img/mafuheadpat/idle.jpeg";
-var headpatHoverImg = "img/mafuheadpat/headpat1.jpeg";
-var headpatClickImg = "img/mafuheadpat/headpat2.jpeg";
+var headpatIdleImg = "/lab02/img/mafuheadpat/idle.jpeg";
+var headpatHoverImg = "/lab02/img/mafuheadpat/headpat1.jpeg";
+var headpatClickImg = "/lab02/img/mafuheadpat/headpat2.jpeg";
 var headpatImage = document.getElementById("mafuheadpat");
 var headpatButton = document.getElementById("mafuheadpatButton");
 var headpatCounter = document.getElementById("mafuheadpatCounter");
