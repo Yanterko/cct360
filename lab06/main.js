@@ -152,7 +152,7 @@ function testButton(stateId) {
         started = true;
     }
     else {
-        console.error("Can't testButtonState; stateId must be a number between 0 and " + numOfVerdicts);
+        console.error("Can't testButton; stateId must be a number between 0 and 2");
     }
 }
 
