@@ -54,6 +54,8 @@ function getVerdict() {
             let bool_snowing = snow > 0;
             let bool_cloudy = cloud >= 70;
             let bool_foggy = visibility <= 1;
+            let bool_daytime = data.current.is_day == 1;
+            
             
             if (bool_windy) {
                 iview.src = imgPathRoot + imgPaths[5];
@@ -80,7 +82,7 @@ function getVerdict() {
                 icaption.textContent = imgCaptions[4];
                 body.style.backgroundColor = bgColors[4];
             }
-            else if (data.is_day) {
+            else if (bool_daytime) {
                 iview.src = imgPathRoot + imgPaths[2];
                 icaption.textContent = imgCaptions[2];
                 body.style.backgroundColor = bgColors[2];
